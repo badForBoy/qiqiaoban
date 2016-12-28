@@ -5,12 +5,175 @@
 	<title>qiqiaoban</title>
 	<!-- 新 Bootstrap 核心 CSS 文件 -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 sidebar">
+				<div class="logo">
+					<h4>
+						<a href="">
+							<div></div>
+							<span>Chrome 网上应用店</span>
+						</a>
+					</h4>
+				</div>
+				<div class="search form-group">
+					<input class="form-control" type="text">
+				</div>
+				<div class="theme">
+					<ul>
+						<li><a href="">扩展程序</a></li>
+						<li><a href="">主题背景</a></li>
+						<li><a href="">应用</a></li>
+						<li><a href="">游戏</a></li>
+					</ul>
+				</div>
+				<div class="classification">
+					<div class="level-title">
+						<span class="">类别</span>
+					</div>
+					<div>
+						<select class="form-control" name="" id="">
+							<option value="">全部</option>
+							<option value="">全部</option>
+							<option value="">全部</option>
+							<option value="">全部</option>
+						</select>
+					</div>
+				</div>
+				<div class="function">
+					<div class="level-title">
+						<span>功能</span>
+					</div>
+					<div>
+						<input id="function-li" type="checkbox">
+						<label for="function-li"><span>可离线使用</span></label>
+					</div>
+					<div>
+						<input id="function-li" type="checkbox">
+						<label for="function-li"><span>Google 产品</span></label>
+					</div>
+					<div>
+						<input id="function-li" type="checkbox">
+						<label for="function-li"><span>免费</span></label>
+					</div>
+					<div>
+						<input id="function-li" type="checkbox">
+						<label for="function-li"><span>适用于Android设备</span></label>
+					</div>
+					<div>
+						<input id="function-li" type="checkbox">
+						<label for="function-li"><span>支持 Google 云端硬盘</span></label>
+					</div>
+				</div>
+				<div class="score">
+					<div class="level-title">
+						<span>评分</span>
+					</div>
+					<div>
+						<input id="score-fs" type="radio">
+						<label for="score-fs"><span></span></label>
+					</div>
+					<div>
+						<input id="score-fs" type="radio">
+						<label for="score-fs"><span></span></label>
+					</div>
+					<div>
+						<input id="score-fs" type="radio">
+						<label for="score-fs"><span></span></label>
+					</div>
+					<div>
+						<input id="score-fs" type="radio">
+						<label for="score-fs"><span></span></label>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="login clearfix">
+					<div class="pull-right">
+						<button type="button" class="btn btn-default btn-sm">
+						  <span class="glyphicon glyphicon-cog"></span>
+						</button>
+					</div>
+					<div class="pull-right">
+						<a href="">登陆</a>
+					</div>
+				</div>
+				<div class="selected">
+					<!-- 图片轮播 begin -->
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+					
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+							    <img src="img/banner_1.jpg" alt="...">
+							</div>
+							<div class="item">
+							    <img src="img/banner_2.jpg" alt="...">
+							</div>
+							<div class="item">
+							    <img src="img/banner_3.jpg" alt="...">
+							</div>
+						</div>
+					
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					<!-- 图片轮播 end -->
+				</div>
+
+				<div class="all"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 图片轮播 begin
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  Indicators
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol>
+	
+	  Wrapper for slides
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img src="img/banner_1.jpg" alt="...">
+	    </div>
+	    <div class="item">
+	      <img src="img/banner_2.jpg" alt="...">
+	    </div>
+	    <div class="item">
+	      <img src="img/banner_3.jpg" alt="...">
+	    </div>
+	  </div>
+	
+	  Controls
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+	图片轮播 end
+	
 	<div>
 		<div class="container">
 			<p>git</p>
@@ -21,6 +184,6 @@
 	<div></div>
 	<div></div>
 	<div></div>
-	<div></div>
+	<div></div> -->
 </body>
 </html>

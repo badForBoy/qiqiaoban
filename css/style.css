@@ -1,0 +1,113 @@
+/*************
+   全局样式 
+ *************/
+html,body, .container, .row{
+	height: 100%;
+}
+a{
+	font-style: normal;
+	color: #222;
+}
+a:hover{
+	text-decoration: none;
+	color: #4d7bd6;
+}
+li{
+	list-style: none;
+}
+// Mixin itself
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Usage as a Mixin
+.element {
+  .clearfix();
+}
+//侧边栏二级标题
+.level-title{
+	margin-top: 30px;
+}
+.level-title span{
+	color: #888;
+}
+
+/**************
+   侧边栏样式 
+ **************/
+ .sidebar{
+ 	background: #f1f1f1;
+ 	height: 100%;
+ 	border-left: 1px solid #ddd;
+ 	border-right: 1px solid #ddd;
+ }
+ /* logo板块 */
+
+ /* 主题板块 */
+ .theme ul{
+ 	padding-left: 0;
+ }
+ .theme ul li{
+ 	line-height: 32px;
+ 	padding-left: 40px;
+ }
+.theme ul li:active,
+.theme ul li:visited{
+	background: #5080d8;
+	border-radius: 4px;
+}
+.theme ul li:active a,
+.theme ul li:visited a{
+	color: #FFF;
+}
+ /* 类别板块 */
+
+ /* 功能板块 */
+ .function > div{
+ 	margin-bottom: 4px;
+ }
+ .function label{
+ 	font-weight: normal;
+ }
+
+ /* 评分板块 */
+
+/**************
+   内容样式 
+ **************/
+ .col-md-9{
+ 	padding-left: 0;
+ 	padding-right: 0;
+ 	border-right: 1px solid #ddd;
+ }
+
+/* 登陆板块 */
+.login{
+	text-align: right;
+	background: #f1f1f1;
+	border-bottom: 1px solid #ddd;
+}
+.login a{
+	line-height: 40px;
+}
+.login .pull-right{
+	margin-right: 10px;
+}
+.login .pull-right button{
+	margin-top: 5px;
+}
+
+/* 精选板块 */
+.selected{
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+/* 所有主题板块 */
