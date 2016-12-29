@@ -4,6 +4,16 @@
 html,body, .container, .row{
 	height: 100%;
 }
+.col-md-9{
+	height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+.scroll-box{
+	height: 100%;
+	width: calc(100% + 17px);
+	overflow-y: auto;
+} 
 a{
 	font-style: normal;
 	color: #222;
@@ -15,6 +25,18 @@ a:hover{
 li{
 	list-style: none;
 }
+em{
+	font-style: normal;
+	font-weight: 700;
+	color: #1c5ac4;
+}
+i{
+	font-style: normal;
+}
+.choice h2{
+	margin-top: 0;
+	padding-top: 15px;
+}
 // Mixin itself
 .clearfix() {
   &:before,
@@ -25,6 +47,9 @@ li{
   &:after {
     clear: both;
   }
+}
+.level-title {
+	margin-top: 30px;
 }
 
 // Usage as a Mixin
@@ -51,6 +76,9 @@ li{
  /* logo板块 */
 
  /* 主题板块 */
+ .theme-select{
+ 	margin-top: 10px;
+ }
  .theme ul{
  	padding-left: 0;
  }
@@ -67,7 +95,24 @@ li{
 .theme ul li:visited a{
 	color: #FFF;
 }
+ .nav-stacked-on{
+	background: #5080d8;
+	border-radius: 4px;
+}
+.nav-stacked-on a{
+	color: #FFF;
+} 
+/* .nav-stacked a{
+	display: block;
+	width: 100%;
+	height: 100%;
+} */
+
  /* 类别板块 */
+.theme-select option{
+	line-height: 26px;
+	padding: 10px;
+}
 
  /* 功能板块 */
  .function > div{
@@ -78,6 +123,9 @@ li{
  }
 
  /* 评分板块 */
+ .score > div{
+ 	margin-bottom: 4px;
+ }
 
 /**************
    内容样式 
@@ -111,6 +159,19 @@ li{
 	border-bottom: 1px solid #bdbdbd;
 	background: #f1f1f1;
 }
+/* choice */
+.choice{
+	background: #e6e6e6;
+	padding: 0 10px;
+	border-bottom: 1px solid #bdbdbd;
+}
+.choice a{
+	color: #888;
+}
+.choice a:hover{
+	text-decoration: none;
+	color: #4d7bd6;
+}
 
 /* 所有主题板块 */
 .all .row{
@@ -123,6 +184,9 @@ li{
 	border-top: 1px solid #fff;
 	padding: 8px;
 	background: #f1f1f1;
+}
+.all .row .col-md-3:hover{
+	border-top: 1px solid #ececec;
 }
 .all .row .col-md-3:nth-child(4n){
 	border-right: 0;
@@ -149,6 +213,12 @@ li{
 }
 .all-img-box:hover .modal-btn{
 	display: block;
+}
+.all-item{
+	padding: 4px 10px 0;
+}
+.all-item-text span{
+	font-size: 12px;
 }
 .modal-btn p{
 	color: #fff;

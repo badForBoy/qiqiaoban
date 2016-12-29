@@ -9,7 +9,7 @@
 	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
 	<div class="container">
@@ -24,11 +24,11 @@
 					</h4>
 				</div>
 				<div class="search form-group">
-					<input class="form-control" type="text">
+					<input class="form-control" type="text" placeholder="搜索应用">
 				</div>
 				<div class="theme">
 					<ul class="nav-stacked">
-						<li><a href="">扩展程序</a></li>
+						<li class="nav-stacked-on"><a href="">扩展程序</a></li>
 						<li><a href="">主题背景</a></li>
 						<li><a href="">应用</a></li>
 						<li><a href="">游戏</a></li>
@@ -38,12 +38,13 @@
 					<div class="level-title">
 						<span class="">类别</span>
 					</div>
-					<div>
+					<div class="theme-select">
 						<select class="form-control" name="" id="">
 							<option value="">全部</option>
-							<option value="">全部</option>
-							<option value="">全部</option>
-							<option value="">全部</option>
+							<option value="">博客</option>
+							<option value="">购物</option>
+							<option value="">开发者工具</option>
+							<option value="">社交与通讯</option>
 						</select>
 					</div>
 				</div>
@@ -56,20 +57,20 @@
 						<label for="function-li"><span>可离线使用</span></label>
 					</div>
 					<div>
-						<input id="function-li" type="checkbox">
-						<label for="function-li"><span>Google 产品</span></label>
+						<input id="function-goods" type="checkbox">
+						<label for="function-goods"><span>Google 产品</span></label>
 					</div>
 					<div>
-						<input id="function-li" type="checkbox">
-						<label for="function-li"><span>免费</span></label>
+						<input id="function-free" type="checkbox">
+						<label for="function-free"><span>免费</span></label>
 					</div>
 					<div>
-						<input id="function-li" type="checkbox">
-						<label for="function-li"><span>适用于Android设备</span></label>
+						<input id="function-android" type="checkbox">
+						<label for="function-android"><span>适用于Android设备</span></label>
 					</div>
 					<div>
-						<input id="function-li" type="checkbox">
-						<label for="function-li"><span>支持 Google 云端硬盘</span></label>
+						<input id="function-yun" type="checkbox">
+						<label for="function-yun"><span>支持 Google 云端硬盘</span></label>
 					</div>
 				</div>
 				<div class="score">
@@ -77,203 +78,849 @@
 						<span>评分</span>
 					</div>
 					<div>
-						<input id="score-fs" type="radio">
-						<label for="score-fs"><span></span></label>
+						<input id="score-5" type="radio" name="star">
+						<label for="score-5">
+							<span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</label>
 					</div>
 					<div>
-						<input id="score-fs" type="radio">
-						<label for="score-fs"><span></span></label>
+						<input id="score-4" type="radio" name="star">
+						<label for="score-4">
+							<span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</span>
+						</label>
 					</div>
 					<div>
-						<input id="score-fs" type="radio">
-						<label for="score-fs"><span></span></label>
+						<input id="score-3" type="radio" name="star">
+						<label for="score-3">
+							<span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</span>
+						</label>
 					</div>
 					<div>
-						<input id="score-fs" type="radio">
-						<label for="score-fs"><span></span></label>
+						<input id="score-2" type="radio" name="star">
+						<label for="score-2">
+							<span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</span>
+						</label>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-9">
-				<div class="login btn-group clearfix">
-					<div class="pull-right">
-						<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
-						  <span class="glyphicon glyphicon-cog"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu">
-						    <li><a href="#">您的应用</a></li>
-						    <li ><a href="#">语言：中文 (简体)</a></li>
-						    <li><a href="#">位置：日本</a></li>
-						    <li><a href="#">开发者信息中心</a></li>
-						    <li><a href="#">隐私权政策</a></li>
-						    <li><a href="#">服务条款</a></li>
-						    <li class="divider"></li>
-						    <li><a href="#">Google 大全</a></li>
-						</ul>
-					</div>
-					<div class="pull-right">
-						<a href="">登陆</a>
-					</div>
-				</div>
-				<div class="selected">
-					<!-- 图片轮播 begin -->
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
-					
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-							    <img src="img/banner_1.jpg" alt="...">
-							</div>
-							<div class="item">
-							    <img src="img/banner_2.jpg" alt="...">
-							</div>
-							<div class="item">
-							    <img src="img/banner_3.jpg" alt="...">
-							</div>
+				<div class="scroll-box">
+					<div class="login btn-group clearfix">
+						<div class="pull-right">
+							<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+							  <span class="glyphicon glyphicon-cog"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+							    <li><a href="#">您的应用</a></li>
+							    <li ><a href="#">语言：中文 (简体)</a></li>
+							    <li><a href="#">位置：日本</a></li>
+							    <li><a href="#">开发者信息中心</a></li>
+							    <li><a href="#">隐私权政策</a></li>
+							    <li><a href="#">服务条款</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#">Google 大全</a></li>
+							</ul>
 						</div>
-					
-						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-						</a>
-						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-						</a>
+						<div class="pull-right">
+							<a href="">登陆</a>
+						</div>
 					</div>
-					<!-- 图片轮播 end -->
-				</div>
-
-				<div class="all clearfix">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="all-img-box">
-								<!-- modal begin -->
-								<div class="modal-btn" data-toggle="modal" data-target=".bs-example-modal-lg">
-									<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+					<div class="selected">
+						<!-- 图片轮播 begin -->
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
+						
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+								    <img src="img/banner_1.jpg" alt="...">
 								</div>
-								<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div>
-												<div>
-													<img src="" alt="">
+								<div class="item">
+								    <img src="img/banner_2.jpg" alt="...">
+								</div>
+								<div class="item">
+								    <img src="img/banner_3.jpg" alt="...">
+								</div>
+							</div>
+						
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						</div>
+						<!-- 图片轮播 end -->
+					</div>
+
+					
+
+					<div class="all">
+						<div class="all_1">
+							<div class="choice">
+								<a href="">
+									<h2>新机必备</h2>
+									<p>安装这些扩展程序，充分利用Chrome<span class="pull-right">查看全部</span></p>
+								</a>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_1">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
 												</div>
-												<div>
-													<h2>Unblock Boundary:解除youku优酷、xiami</h2>
-													<p>由<a href="">www.unblockyk.com</a>提供</p>
-												</div>
-												<div></div>
 											</div>
-											<div></div>
-											<div></div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/02.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
 										</div>
 									</div>
 								</div>
-								<!-- modal end -->
-					
-								<img src="img/01.webp" alt="">
-							</div>
-							<div>
-								更新新选项
-							</div>
-							<div>
-								<div></div>
-								<span>(4445)</span>
-								<em>免费</em>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/02.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_3">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/02.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_4">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/02.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_5">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/02.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_6">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/02.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_7">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/02.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_8">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/02.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-3">
-							<div class="all-img-box">
-								<img src="img/01.webp" alt="">
+						<div class="all_1">
+							<div class="choice">
+								<a href="">
+									<h2>编者精选</h2>
+									<p>安装这些扩展程序，充分利用Chrome<span class="pull-right">查看全部</span></p>
+								</a>
 							</div>
-							<div>
-								更新新选项
-							</div>
-							<div>
-								<div></div>
-								<span>(4445)</span>
-								<em>免费</em>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="all-img-box">
-								<img src="img/01.webp" alt="">
-							</div>
-							<div>
-								更新新选项
-							</div>
-							<div>
-								<div></div>
-								<span>(4445)</span>
-								<em>免费</em>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="all-img-box">
-								<img src="img/01.webp" alt="">
-							</div>
-							<div>
-								更新新选项
-							</div>
-							<div>
-								<div></div>
-								<span>(4445)</span>
-								<em>免费</em>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="all-img-box">
-								<img src="img/01.webp" alt="">
-							</div>
-							<div>
-								更新新选项
-							</div>
-							<div>
-								<div></div>
-								<span>(4445)</span>
-								<em>免费</em>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="all-img-box">
-								<img src="img/01.webp" alt="">
-							</div>
-							<div>
-								更新新选项
-							</div>
-							<div>
-								<div></div>
-								<span>(4445)</span>
-								<em>免费</em>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="all-img-box">
-								<img src="img/01.webp" alt="">
-							</div>
-							<div>
-								更新新选项
-							</div>
-							<div>
-								<div></div>
-								<span>(4445)</span>
-								<em>免费</em>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="all-img-box">
-								<img src="img/01.webp" alt="">
-							</div>
-							<div>
-								更新新选项
-							</div>
-							<div>
-								<div></div>
-								<span>(4445)</span>
-								<em>免费</em>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2_1">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/01.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2_2">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2_2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/01.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2_3">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2_3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/01.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2_4">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2_4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/01.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2_5">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2_5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/01.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2_6">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2_6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/01.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2_7">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2_7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/01.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="all-img-box">
+										<!-- modal begin -->
+										<div class="modal-btn" data-toggle="modal" data-target=".modal_2_8">
+											<p>方便的扩展功能能取代常规的Chrome新选项卡页面，使用Atavi书签管理器可快速访问面板</p>
+										</div>
+										<div class="modal fade modal_2_8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div>
+														<div>
+															<img src="" alt="">
+														</div>
+														<div>
+															<h2>Unblock Boundary:解除youku优酷、xiami</h2>
+															<p>由<a href="">www.unblockyk.com</a>提供</p>
+														</div>
+														<div></div>
+													</div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+										</div>
+										<!-- modal end -->
+							
+										<img src="img/01.jpg" alt="">
+									</div>
+									<div class="all-item">
+										<div>
+											更新新选项
+										</div>
+										<div class="all-item-text">
+											<span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+												<span class="glyphicon glyphicon-star-empty"></span>
+											</span>
+											<i>(4445)</i>
+											<em class="pull-right">免费</em>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -282,5 +929,8 @@
 		</div>
 	</div>
 	
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/style.js"></script>
 </body>
 </html>
